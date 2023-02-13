@@ -1,0 +1,45 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Button */
+/* By Hamza Dogan */
+
+.button{
+text-decoration: none;
+display: inline-block;
+line-height: 50px;
+padding: 0px 20px;
+color: rgb(42, 42, 42);
+border: 1px solid rgb(48, 48, 48);
+width: 200px;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+font-weight: bold;
+position: relative;
+overflow: hidden;
+transition: 0.8s font-size;
+
+}
+.button:hover{
+    font-size: 23px;
+    color: rgb(36, 36, 36);
+}
+
+.button::before{
+    transition: 1s left;
+    content: "";
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    left: -140%;
+    top: 0;
+    background-image:linear-gradient(to left,rgb(9, 122, 192),rgb(9, 202, 245));
+    z-index: -1;
+    transform: skewx(15deg);
+}
+
+.button:hover::before{
+    left: 120%;
+}
+
